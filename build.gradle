@@ -1,13 +1,17 @@
 buildscript{
-    dependencies{
-        classpath "com.github.Anuken.Mindustry:core:$mindustryVersion"
-        classpath "com.squareup:javapoet:$javapoetVersion"
-        classpath "com.github.Anuken:jabel:$jabelVersion"
-    }
 
     repositories{
         mavenCentral()
         maven{ url 'https://jitpack.io' }
+    }
+    dependencies{
+        classpath "com.github.Anuken.Mindustry:core:$mindustryVersion"
+        classpath "com.squareup:javapoet:$javapoetVersion"
+        classpath "com.github.Anuken:jabel:$jabelVersion"
+/*        compileOnly "com.github.Anuken.Arc:arc-core:$mindustryVersion"
+        compileOnly "com.github.Anuken.Mindustry:core:$mindustryVersion"
+
+        annotationProcessor "com.github.Anuken:jabel:$jabelVersion"*/
     }
 }
 
